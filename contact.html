@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ghh trial web</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"> GHH</h2>
+      <div class="toggle"></div>
+    </header>
+    <div class="bg-image" style="background-image: url('darkgrey.jpg');"></div>
+    <div class="overlay"></div>
+    <div class="text">
+     <h3><strong>contact</strong><br></h3> 
+    </div>
+    <ul class="social">
+      <li><a href="https://mobile.twitter.com"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://instagram.com"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+                <li> <a href="home.html"> home </a> </li>
+                <li> <a href="schedule.html"> schedule </a> </li>
+                <li> <a href="faq.html"> FAQ </a> </li>
+                <li> <a href="sponsors.html"> sponsors </a> </li>
+                <li> <a href="contact.html"> contact </a> </li>
+                <li> <a href="socials.html"> socials </a> </li>
+    </ul>
+  </div>
+    <script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>
